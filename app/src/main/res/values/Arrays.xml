@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="Labels">
+        <item>@string/label_Movie</item>
+        <item>@string/label_tv_show</item>
+    </array>
+    <array name="values">
+        <item>@string/value_Movie</item>
+        <item>@string/value_tv_show</item>
+    </array>
+</resources>

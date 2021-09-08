@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Play Movies &amp; TV</string>
+    <string name="hint">Search Movie</string>
+    <string name="appLabel">Movies</string>
+
+    <string name="Label">Genre</string>
+    <string name="Key">genre</string>
+    <string name="label_Movie">movie</string>
+    <string name="label_tv_show">Tv_shows</string>
+    <string name="value_Movie">movie</string>
+    <string name="value_tv_show">Tv_shows</string>
+    <string name="languages">English(5.1) , French(5.1) , Hindi(5.1) , Tamil(5.1) , Malayalam(5.1) ,Kannada(5.1) ,Telugu(5.1)</string>
+   <string name="trailer">Trailer</string>
+   <string name="addwatchlist">Add to watchlist</string>
+   <string name="more">More</string>
+   <string name="rent25">RENT FROM $25</string>
+   <string name="rent75">BUY FROM $75</string>
+   <string name="similar">Similar movies</string>
+   <string name="moreinfo">More information</string>
+
+
+</resources>

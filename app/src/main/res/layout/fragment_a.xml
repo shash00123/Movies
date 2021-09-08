@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp">
+
+        <TextView
+            android:id="@+id/trending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Trending"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/trending1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/trending"
+            android:layout_margin="2dp"
+            android:text="Catch the latest blockblusters"
+            android:visibility="invisible"
+            android:textColor="@color/white" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/trending1"
+            android:orientation="horizontal"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            tools:listitem="@layout/trending_xml" />
+
+        <TextView
+            android:id="@+id/popular_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/p"
+            android:gravity="center"
+            android:text="Popular"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/popular1"
+            android:layout_margin="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Most popular on Play Store"
+            android:visibility="invisible"
+            android:layout_below="@id/popular_t" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/u"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/popular1"
+            android:orientation="horizontal"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            tools:listitem="@layout/popular_xml" />
+
+        <TextView
+            android:id="@+id/now_playing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/u"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="Now Playing"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/u_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/now_playing"
+            android:paddingTop="12dp"
+            android:paddingBottom="10dp"
+            tools:listitem="@layout/now_playing_xml" />
+
+        <TextView
+            android:id="@+id/upcoming_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/u_5"
+            android:gravity="center"
+            android:text="Upcoming"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/u_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upcoming_t"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            tools:listitem="@layout/upcoming_xml" />
+
+        <TextView
+            android:id="@+id/toprated_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/u_3"
+            android:gravity="center"
+
+            android:text="Toprated"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:visibility="invisible" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/u_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toprated_t"
+            android:paddingTop="12dp"
+            android:paddingBottom="6dp"
+            tools:listitem="@layout/toprated_xml" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/u_2"
+            android:gravity="center"
+            android:text="TV popular"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/u_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            tools:listitem="@layout/tv_xml" />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

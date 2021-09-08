@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:fitsSystemWindows="true"
+    android:theme="@style/Theme.First">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:translationZ="0.1dp"
+            app:elevation="0dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:titleTextColor="@color/white" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/block1"
+                    android:layout_width="match_parent"
+                    android:layout_height="285dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp">
+
+                        <ImageView
+                            android:id="@+id/background_image_fr"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_launcher_background" />
+
+                        <Button
+                            android:id="@+id/trailer_fr"
+                            android:layout_width="120dp"
+                            android:layout_height="40dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/button"
+                            android:drawableStart="@drawable/ic_baseline_play_arrow_24"
+                            android:paddingStart="18dp"
+                            android:paddingEnd="18dp"
+                            android:text="@string/trailer"
+                            android:backgroundTint="#59000000"
+                            android:backgroundTintMode="src_over"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="14dp">
+
+                        <ImageView
+                            android:id="@+id/poster_fr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:src="@drawable/ic_launcher_background" />
+
+                        <TextView
+                            android:id="@+id/Title_fr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="17dp"
+                            android:layout_toEndOf="@id/poster_fr"
+                            android:background="#0D000000"
+                            android:maxWidth="200dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/ratingFr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/Title_fr"
+                            android:layout_marginStart="17dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toEndOf="@id/poster_fr"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="13dp">
+
+                    <TextView
+                        android:id="@+id/watchlist_fr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="18dp"
+                        android:text="@string/addwatchlist"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/overview_fr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/watchlist_fr"
+                        android:layout_marginTop="10dp"
+                        android:lineSpacingExtra="6dp"
+                                              android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/more_fr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/overview_fr"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="20dp"
+                        android:padding="8dp"
+                        android:text="@string/more"
+                        android:textColor="@color/Red" />
+
+                    <Button
+                        android:id="@+id/rent25"
+                        android:layout_width="159dp"
+                        android:layout_height="36dp"
+                        android:layout_below="@id/more_fr"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/Red"
+                        android:text="@string/rent25"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/rent75"
+                        android:layout_width="159dp"
+                        android:layout_height="36dp"
+                        android:layout_below="@id/more_fr"
+                        android:layout_marginStart="09dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_toEndOf="@id/rent25"
+                        android:background="@color/Red"
+                        android:text="@string/rent75"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/similar_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rent75"
+                        android:layout_marginTop="28dp"
+                        android:text="@string/similar"
+                        android:textColor="@color/white" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerview_similar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/similar_textview"
+                        android:paddingTop="17dp" />
+
+                    <TextView
+                        android:id="@+id/extra1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/recyclerview_similar"
+                        android:layout_marginTop="28dp"
+                        android:text="@string/moreinfo"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/extra2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/extra1"
+                        android:layout_marginTop="27dp"
+                        android:text="Audio languages"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/extra3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/extra2"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="9dp"
+                        android:lineSpacingExtra="6dp"
+                        android:text="@string/languages"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/extra4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/extra3"
+                        android:layout_marginTop="9dp"
+                        android:text="Captions"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/extra5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/extra4"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="9dp"
+                        android:text="English"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/extra6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/extra5"
+                        android:layout_marginTop="9dp"
+                        android:text="Rental Expiration"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/extra7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/extra6"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="9dp"
+                        android:text="Start within 30 days,finish within 2 days"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/extra8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/extra7"
+                        android:layout_marginTop="9dp"
+                        android:text="How to play"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/extra9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/extra8"
+                        android:layout_marginTop="7dp"
+                        android:text="You can play your content on supported devices"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>

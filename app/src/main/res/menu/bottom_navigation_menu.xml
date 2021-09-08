@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home_png"
+        android:title="Home" />
+    <item
+        android:id="@+id/navigation_explore"
+        android:icon="@drawable/search_png"
+        android:title="Explore" />
+    <item
+        android:id="@+id/navigation_new"
+        android:icon="@drawable/ic_baseline_playlist_add_check_24"
+        android:title="Watchlist" />
+</menu>
